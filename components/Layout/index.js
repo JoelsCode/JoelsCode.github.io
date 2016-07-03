@@ -3,15 +3,18 @@ import Header from '../Header'
 import SideImgV2 from '../SideImgV2'
 import SideImgV3 from '../SideImgV3'
 import Particles from '../Particles'
-
+import Canvas from '../Canvas'
 import SkillStickers from '../SkillStickers'
+import Form from '../Form'
 
 class Layout extends Component {
     render() {
         return (
-            <div className="animated rotateInUpLeft" id="homepage">
-                <div className="z-depth-1" id="content">
+            <div className="" id="homepage">
+                <Canvas />
+                <div className="animated rotateInUpLeft z-depth-1" id="content">
                     <Header />
+                    <Form />    
                     <SideImgV2 
                         heading= "Web Development"
                         paragraph="2 years ago, i picked up web development again and i havent looked back since. I focus on creating data driven user interfaces for the web. May it be a simple landing page, complex business application, or e-commerce."
@@ -32,7 +35,6 @@ class Layout extends Component {
                 </div>
 
 
-                    <footer style={{padding: "50px"}}><h4>Joel Codes © 2016</h4></footer>
             </div>
         );
     }

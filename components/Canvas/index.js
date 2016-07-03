@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Canvas extends Component {
     render() {
         return (
-            <canvas style={this.getCss()} width="1600px" height="400px" id="snake"> </canvas>
+            <div style={this.getCss()} width="1600px" height="400px" id="snake"> </div>
         );
     }
 
@@ -12,7 +12,10 @@ class Canvas extends Component {
             position: "absolute",
             top: 0,
             zIndex: -10,
-            transform: "translateX(-50%)"
+            height: "505px",
+            width: "100%",
+            background: "url('./tower.jpg') fixed no-repeat",
+            backgroundSize: "cover"
 
         }
     }

@@ -11,6 +11,7 @@ class App extends Component {
             <div >
                 <Layout />
                <Particles />
+                                   <footer style={{padding: "50px"}}><h4>Joel Codes © 2016</h4> <h3>Miami, Florida</h3></footer>
             </div>
         );
     }
